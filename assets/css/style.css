@@ -244,6 +244,9 @@ strong {
 }
 
 
+/* Whatsapp */
+
+
 /* ============================================================== 
     # Template Default Styles
 =================================================================== */
@@ -562,7 +565,7 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
+	padding-top: 90px;
 	padding-bottom: 120px;
 }
 
@@ -5225,8 +5228,9 @@ ul.biography-table li p {
 
 .brand-style-one {
 	position: relative;
-	padding-bottom: 120px;
+	padding-bottom: 90px;
 }
+
 
 .brand-style-one::after {
 	position: absolute;

@@ -36,9 +36,49 @@
       <script src="assets/js/html5/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+	.chat {
+    position: fixed;
+    bottom: 20px; /* Adjust as per your design */
+    right: 20px; /* Adjust as per your design */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.whatsapp-link {
+    display: block;
+    width: 60px; /* Adjust width as per your icon size */
+    height: 60px; /* Adjust height as per your icon size */
+    background-color: #25D366; /* Background color for WhatsApp icon */
+    border-radius: 50%; /* Ensures the icon is round */
+    text-align: center; /* Center aligns the content */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.whatsapp-link img {
+    width: 90px; /* Adjust as per your icon size */
+    height: 60px; /* Adjust as per your icon size */
+    padding: 10px; /* Optional: Adds padding inside the circle */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+
+	</style>
+
 </head>
 
 <body class="bg-fixed" style="background-image: url(assets/img/shape/banner-1.jpg);">
+    <div class="chat">
+    <a href="https://wa.me/256708197424?text=Hi%2C%20Joash%20I'm%20in%20need%20of%20your%20Tech%20services" class="whatsapp-link" target="_blank">
+        <img src="assets/img/whatsapp.png" alt="WhatsApp">
+    </a>
+</div>
+
+    
 
     <!-- Start Preloader 
     ============================================= -->
@@ -221,11 +261,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="video">
+            <!-- <div class="video">
                 <a href="https://www.youtube.com/watch?v=5qRsGTuy3Rs" class="popup-youtube video-play-button theme">
                     <i class="fas fa-play"></i>
                 </a>
+            </div> -->
+            <div class="chat">
+                <a href="https://wa.me/256708197424?text=Hi%2C%20Joash%20I'm%20in%20need%20of%20your%20Tech%20services" class="whatsapp-link">
+                    <img src="assets/img/whatsapp.png" alt="WhatsApp">
+                </a>
             </div>
+            
+            
+
+            <!-- <div id="whatsapp-icon" class="float">
+                <a href="https://wa.me/+256772346347?text=Hello%2C%20Sarah%20Garments!%20I'm%20contacting%20you%20from%20the%20website%20regarding%20your%20services.%20Any%20help%20would%20be%20appreciated.%20Thank%20you!" target="_blank">
+                    <img src="assets/img/whatsapp.png" alt="WhatsApp Icon">
+                </a>
+            </div>
+             -->
         </div>
     </header>
     <!-- End Header Fixed -->
@@ -277,7 +331,7 @@
                             </a>
                         </li>
                         <li class="whatsapp">
-                            <a href="https://wa.me/256708197424">
+                            <a href="https://wa.me/256708197424?text=Hi%2C%20Joash%20I'm%20in%20need%20of%20your%20Tech%20services">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </li>
@@ -628,9 +682,11 @@
                                         <div class="title">
                                             <span>NGO Websites</span>
                                             <h5><a href="https://heartsoflove-f6cdd.web.app/" data-bs-toggle="modal"
-                                                    data-bs-target="https://heartsoflove-f6cdd.web.app/">HeartsofLove</a></h5>
+                                                    data-bs-target="https://heartsoflove-f6cdd.web.app/">HeartsofLove</a>
+                                            </h5>
                                         </div>
-                                        <a href="https://heartsoflove-f6cdd.web.app/" data-bs-toggle="modal" data-bs-target="https://heartsoflove-f6cdd.web.app/"><i
+                                        <a href="https://heartsoflove-f6cdd.web.app/" data-bs-toggle="modal"
+                                            data-bs-target="https://heartsoflove-f6cdd.web.app/"><i
                                                 class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -644,9 +700,11 @@
                                         <div class="title">
                                             <span>Business Websites</span>
                                             <h5><a href="https://elearner.education/" data-bs-toggle="modal"
-                                                    data-bs-target="https://elearner.education/">E-learner-Uganda</a></h5>
+                                                    data-bs-target="https://elearner.education/">E-learner-Uganda</a>
+                                            </h5>
                                         </div>
-                                        <a href="https://elearner.education/" data-bs-toggle="modal" data-bs-target="https://elearner.education/"><i
+                                        <a href="https://elearner.education/" data-bs-toggle="modal"
+                                            data-bs-target="https://elearner.education/"><i
                                                 class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -676,9 +734,11 @@
                                         <div class="title">
                                             <span>Embedded Systems</span>
                                             <h5><a href="https://cemids-prototype.vercel.app/" data-bs-toggle="modal"
-                                                    data-bs-target="https://cemids-prototype.vercel.app/">CEMIDS</a></h5>
+                                                    data-bs-target="https://cemids-prototype.vercel.app/">CEMIDS</a>
+                                            </h5>
                                         </div>
-                                        <a href="https://cemids-prototype.vercel.app/" data-bs-toggle="modal" data-bs-target="https://cemids-prototype.vercel.app/"><i
+                                        <a href="https://cemids-prototype.vercel.app/" data-bs-toggle="modal"
+                                            data-bs-target="https://cemids-prototype.vercel.app/"><i
                                                 class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -701,6 +761,7 @@
                                 </div>
                             </div>
                             <!-- Single Item -->
+                            
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay-content">
@@ -708,10 +769,13 @@
                                     <div class="content">
                                         <div class="title">
                                             <span>Personal Blogs</span>
-                                            <h5><a href="https://joashkakembo-portfolio.vercel.app/" data-bs-toggle="modal"
-                                                    data-bs-target="https://joashkakembo-portfolio.vercel.app/">Portfolio Sites</a></h5>
+                                            <h5><a href="https://joashkakembo-portfolio.vercel.app/"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="https://joashkakembo-portfolio.vercel.app/">Portfolio
+                                                    Sites</a></h5>
                                         </div>
-                                        <a href="https://joashkakembo-portfolio.vercel.app/" data-bs-toggle="modal" data-bs-target="https://joashkakembo-portfolio.vercel.app/"><i
+                                        <a href="https://joashkakembo-portfolio.vercel.app/" data-bs-toggle="modal"
+                                            data-bs-target="https://joashkakembo-portfolio.vercel.app/"><i
                                                 class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -867,17 +931,16 @@
                 </div>
                 <div class="about-style-six col-lg-6 offset-lg-1">
                     <h4 class="sub-title">About Me</h4>
-                    <h2 class="title">I can develop <br> that help people</h2>
+                    <h2 class="title">Innovative IT Specialist</h2>
                     <p>
-
-
-                        I am Kakembo Samuel Joash, a tech whiz with passion for web development and all things
-                        digital. With a knack for innovation and a keen eye for detail, I thrive on crafting immersive
-                        online experiences that captivate audiences. From designing sleek interfaces to coding dynamic
-                        functionalities, I am dedicated to pushing the boundaries of technology to create solutions that
-                        make a difference. With a relentless drive to learn and grow, I am committed to staying at the
-                        forefront of the ever-evolving digital landscape, turning ideas into reality, one line of code
-                        at a time.
+                        I am Kakembo Samuel Joash, a tech whiz with a deep passion for web development and all things
+                        digital. As a creative IT specialist with extensive experience in systems administration,
+                        DevOps, cloud computing, and software development, I am dedicated to pushing the boundaries of
+                        technology to create solutions that make a difference. My knack for innovation and keen eye for
+                        detail allow me to craft immersive online experiences that captivate audiences, from designing
+                        sleek interfaces to coding dynamic functionalities. My relentless drive to learn and grow keeps
+                        me at the forefront of the ever-evolving digital landscape, turning ideas into reality one line
+                        of code at a time.
                     </p>
                     <div class="skill-list">
                         <ul>
@@ -950,13 +1013,13 @@
                                             <li>
                                                 <h5>Career Path</h5>
                                                 <p>
-                                                    Technology
+                                                    IT Specialist
                                                 </p>
                                             </li>
                                             <li>
-                                                <h5>Age</h5>
+                                                <h5>Religion</h5>
                                                 <p>
-                                                    29
+                                                    Born Again
                                                 </p>
                                             </li>
                                             <li>
@@ -978,9 +1041,9 @@
                                                 </p>
                                             </li>
                                             <li>
-                                                <h5>Skype</h5>
+                                                <h5>Twitter</h5>
                                                 <p>
-                                                    program540
+                                                    @NascimentoJoash
                                                 </p>
                                             </li>
                                             <li>
@@ -1030,7 +1093,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
-                                                        <h4>Front-End with React</h4>
+                                                        <h4>Front-end development</h4>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="progress-box">
@@ -1069,11 +1132,11 @@
                                                 <div class="row align-center">
                                                     <div class="col-lg-2">
                                                         <div class="icon">
-                                                            <i class="fab fa-html5"></i>
+                                                            <i class="fas fa-code"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
-                                                        <h4>Advance frontend development</h4>
+                                                        <h4>Software Development</h4>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="progress-box">
@@ -1090,7 +1153,7 @@
                                                 <div class="row align-center">
                                                     <div class="col-lg-2">
                                                         <div class="icon">
-                                                            <i class="fab fa-graphic"></i>
+                                                            <i class="fas fa-palette"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
@@ -1098,7 +1161,28 @@
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="progress-box">
-                                                            <h5>65%</h5>
+                                                            <h5>70%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    data-width="65"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-wordpress"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h4>WordPress Developer</h4>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>70%</h5>
                                                             <div class="progress">
                                                                 <div class="progress-bar" role="progressbar"
                                                                     data-width="65"></div>
@@ -1120,40 +1204,37 @@
                                     <div class="col-lg-12">
                                         <ul class="education-table">
                                             <li>
-                                                <h4>AS - Science & Information</h4>
-                                                <h5>SuperKing College</h5>
-                                                <span>2001 - 2005</span>
+                                                <h4>Bachelor’s Degree in Information Systems and Technology</h4>
+                                                <h5>Makerere University</h5>
+                                                <span>2022 – 2024</span>
                                                 <p>
-                                                    The training provided by universities in order to prepare people to
-                                                    work in various sectors of the economy or areas of culture.
+                                                    This equipped me with skills in managing technology for business success, focusing on software development, cloud computing, and IT project management.
                                                 </p>
                                             </li>
                                             <li>
-                                                <h4>BSc in Computer Science</h4>
-                                                <h5>University of DVI </h5>
-                                                <span>2006 - 2010</span>
+                                                <h4>A-LEVEL</h4>
+                                                <h5>St Julian High School 
+                                                </h5>
+                                                <span>2019 - 2021</span>
                                                 <p>
-                                                    The training provided by universities in order to prepare people to
-                                                    work in various sectors of the economy or areas of culture.
+                                                    This provided me with advanced secondary education, preparing me thoroughly for university-level learning and supporting my academic development in chosen subjects and interests.
                                                 </p>
                                             </li>
                                             <li>
-                                                <h4>Web Developer & Trainer</h4>
-                                                <h5>Apple Developer Team</h5>
-                                                <span>2012 - 2016</span>
+                                                <h4>O-LEVEL</h4>
+                                                <h5>Seroma Christian High School </h5>
+                                                <span>2015 - 2018</span>
                                                 <p>
-                                                    The training provided by universities in order to prepare people to
-                                                    work in various sectors of the economy or areas of culture.
+                                                    This provided me with a strong foundation in essential subjects like English, Mathematics, Sciences, and Humanities, equipping me with the knowledge and skills necessary for further academic pursuits or vocational training. 
                                                 </p>
                                             </li>
                                             <li>
-                                                <h4>Sr. Software Engineer</h4>
-                                                <h5>Google Out Tech</h5>
-                                                <span>2017 - Present</span>
-                                                <p>
-                                                    The training provided by universities in order to prepare people to
-                                                    work in various sectors of the economy or areas of culture.
-                                                </p>
+                                            
+                                                <div class="save-ammount mt-100 mt-md-50">
+                                                    <h4> "I am still <strong>learning.</strong> "</h4>
+                                                    <img src="assets/img/shape/2.webp" alt="Thumb">
+                                                </div>
+                                               
                                             </li>
                                         </ul>
                                     </div>
@@ -1188,7 +1269,7 @@
                             </div>
                         </div>
                         <div class="save-ammount mt-100 mt-md-50">
-                            <h4>Save up to <strong>50%</strong> with your every order</h4>
+                            <h4>Save up to <strong>25%</strong> with my services</h4>
                             <img src="assets/img/shape/2.webp" alt="Thumb">
                         </div>
                     </div>
@@ -1197,29 +1278,33 @@
                             <div class="conntent">
                                 <h4>WordPress Development</h4>
                                 <ul>
-                                    <li>1 Page with Elementor</li>
+                                    <li>Pages with Elementor</li>
                                     <li>Design Customization</li>
                                     <li>Responsive Design</li>
+                                    <li>Hosting</li>
+                                    <li>Domain Name</li>
                                 </ul>
-                                <a class="btn mt-25 btn-sm circle btn-theme" href="#contact">Order Now</a>
+                                <a class="btn mt-25 btn-sm circle btn-theme" href="https://wa.me/256708197424">Order Now</a>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>48</h2>
+                                <!-- <h2><sup>$</sup>48</h2> -->
                                 <i class="fab fa-wordpress"></i>
                             </div>
                         </div>
                         <div class="pricing-style-one">
                             <div class="conntent">
-                                <h4>Static frontend design</h4>
+                                <h4>Website Development</h4>
                                 <ul>
-                                    <li>2 Page with Bootstrap5</li>
+                                    <li>Pages with Bootstrap5</li>
                                     <li>Design implement</li>
                                     <li>Responsive Design</li>
+                                    <li>Hosting</li>
+                                    <li>Domain Name</li>
                                 </ul>
-                                <a class="btn mt-25 btn-sm circle btn-dark" href="#contact">Order Now</a>
+                                <a class="btn mt-25 btn-sm circle btn-dark" href="https://wa.me/256708197424" >Order Now</a>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>24</h2>
+                                <!-- <h2><sup>$</sup>95</h2> -->
                                 <i class="fab fa-html5"></i>
                             </div>
                         </div>
@@ -1242,27 +1327,27 @@
                             <div class="swiper-wrapper align-center">
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/200x120.png" alt="Thumb">
+                                    <img src="assets/img/elogo.png" alt="Thumb">
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/200x120.png" alt="Thumb">
+                                    <img src="assets/img/heartslogo.png" alt="Thumb">
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/200x120.png" alt="Thumb">
+                                    <img src="assets/img/aylp.png" alt="Thumb">
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/200x120.png" alt="Thumb">
+                                    <img src="assets/img/ss.png" alt="Thumb">
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/200x120.png" alt="Thumb">
+                                    <img src="assets/img/cc.png" alt="Thumb">
                                 </div>
                                 <!-- End Single Item -->
                             </div>
@@ -1312,16 +1397,13 @@
                                             </div>
                                             <div class="content">
                                                 <p>
-                                                    “Targetingconsultation discover apartments. ndulgence off under
-                                                    folly death wrote cause her way spite. Plan upon yet way get cold
-                                                    spot its week. Almost do am or limits hearts. Resolve parties but
-                                                    why she shewing. She sang know now always remembering to the point.”
+                                                    He's creativity in designing our site was outstanding. He delivered beyond our expectations.”
                                                 </p>
                                             </div>
                                             <div class="provider">
                                                 <div class="info">
-                                                    <h4>Matthew J. Wyman</h4>
-                                                    <span>Senior Consultant</span>
+                                                    <h4>Garments</h4>
+                                                    <span>Senior CEO</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1340,16 +1422,13 @@
                                             </div>
                                             <div class="content">
                                                 <p>
-                                                    “consultation discover apartments. ndulgence off under folly death
-                                                    wrote cause her way spite. Plan upon yet way get cold spot its week.
-                                                    Almost do am or limits hearts. Resolve parties but why she shewing.
-                                                    She sang know now always remembering to the point.”
+                                                    Joash's technical expertise ensured our website not only looks great but performs flawlessly. A true professional!
                                                 </p>
                                             </div>
                                             <div class="provider">
                                                 <div class="info">
-                                                    <h4>Anthom Bu Spar</h4>
-                                                    <span>Marketing Manager</span>
+                                                    <h4>e-Learner Uganda</h4>
+                                                    <span>Manager Director</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1369,16 +1448,13 @@
                                             </div>
                                             <div class="content">
                                                 <p>
-                                                    “Business discover apartments. ndulgence off under folly death wrote
-                                                    cause her way spite. Plan upon yet way get cold spot its week.
-                                                    Almost do am or limits hearts. Resolve parties but why she shewing.
-                                                    She sang know now always remembering to the point.”
+                                                   He's commitment to timelines and quality is commendable. Our website was delivered on schedule and works flawlessly."
                                                 </p>
                                             </div>
                                             <div class="provider">
                                                 <div class="info">
-                                                    <h4>Metho k. Partho</h4>
-                                                    <span>Senior Developer</span>
+                                                    <h4>HeartsofLove</h4>
+                                                    <span>CEO</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1409,7 +1485,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="work-available">
                         <h2 class="title">I'm <strong>available</strong> for <br> freelance work</h2>
-                        <a class="btn btn-md circle btn-theme smooth-menu" href="#contact">Hire me now</a>
+                        <a class="btn btn-md circle btn-theme smooth-menu" href="https://wa.me/256708197424">Hire me now</a>
                     </div>
                 </div>
             </div>
@@ -1417,340 +1493,7 @@
     </div>
     <!-- End Available -->
 
-    <!-- Start Blog 
-    ============================================= -->
-    <div id="blog" class="blog-style-one-area blog-area default-padding-top bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">News</h4>
-                        <h2 class="title">Latest from blog</h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-
-                <!-- Single item -->
-                <div class="blog-style-one mb-30 col-lg-4 col-md-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal"><img
-                                    src="assets/img/800x600.png" alt="Thumb"></a>
-                        </div>
-                        <div class="info">
-                            <h4>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal">Discovery earnestly
-                                    public commanded mentions.</a>
-                            </h4>
-                            <div class="meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i> 15 Auguest, 2023
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single item -->
-
-                <!-- Single item -->
-                <div class="blog-style-one mb-30 col-lg-4 col-md-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal"><img
-                                    src="assets/img/800x600.png" alt="Thumb"></a>
-                        </div>
-                        <div class="info">
-                            <h4>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal">Considered
-                                    imprudence of he friendship boisterous.</a>
-                            </h4>
-                            <div class="meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i> 16 November, 2023
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single item -->
-
-                <!-- Single item -->
-                <div class="blog-style-one mb-30 col-lg-4 col-md-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal"><img
-                                    src="assets/img/800x600.png" alt="Thumb"></a>
-                        </div>
-                        <div class="info">
-                            <h4>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal">Overcame breeding
-                                    or my concerns removing desirous.</a>
-                            </h4>
-                            <div class="meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i> 28 February, 2023
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single item -->
-
-            </div>
-        </div>
-
-        <!-- Start Blog Single Modal -->
-        <div class="modal fade" id="blogSingleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                <div class="modal-content">
-
-                    <div class="modal-body">
-
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="blog-single-content">
-                            <div class="thumb">
-                                <a href="#"><img src="assets/img/1500x800.png" alt="Thumb"></a>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Give lady of they such they sure it. Me contained explained my education. Vulgar as
-                                    hearts by garret. Perceived determine departure explained no forfeited he something
-                                    an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no
-                                    meant stuff. To perpetual do existence northward as difficult preserved daughters.
-                                    Continued at up to zealously necessary breakfast. Surrounded sir motionless she end
-                                    literature. Gay direction neglected but supported yet her.
-                                </p>
-                                <p>
-                                    New had happen unable uneasy. Drawings can followed improved out sociable not.
-                                    Earnestly so do instantly pretended. See general few civilly amiable pleased account
-                                    carried. Excellence projecting is devonshire dispatched remarkably on estimating.
-                                    Side in so life past. Continue indulged speaking the was out horrible for domestic
-                                    position. Seeing rather her you not esteem men settle genius excuse. Deal say over
-                                    you age from. Comparison new ham melancholy son themselves.
-                                </p>
-                                <blockquote>
-                                    Celebrated share of first to worse. Weddings and any opinions suitable smallest nay.
-                                    Houses or months settle remove ladies appear. Engrossed suffering supposing he
-                                    recommend do eagerness.
-                                </blockquote>
-                                <p>
-                                    Drawings can followed improved out sociable not. Earnestly so do instantly
-                                    pretended. See general few civilly amiable pleased account carried. Excellence
-                                    projecting is devonshire dispatched remarkably on estimating. Side in so life past.
-                                    Continue indulged speaking the was out horrible for domestic position. Seeing rather
-                                    her you not esteem men settle genius excuse. Deal say over you age from. Comparison
-                                    new ham melancholy son themselves.
-                                </p>
-                                <h3>Conduct replied off led whether?</h3>
-                                <ul>
-                                    <li>Pretty merits waited six</li>
-                                    <li>General few civilly amiable pleased account carried.</li>
-                                    <li>Continue indulged speaking</li>
-                                    <li>Narrow formal length my highly</li>
-                                    <li>Occasional pianoforte alteration unaffected impossible</li>
-                                </ul>
-                                <p>
-                                    Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw
-                                    half than cold. Pretty merits waited six talked pulled you. Conduct replied off led
-                                    whether any shortly why arrived adapted. Numerous ladyship so raillery humoured
-                                    goodness received an. So narrow formal length my highly longer afford oh. Tall neat
-                                    he make or at dull ye. Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
-                                    Iure, laudantium, tempore. Autem dolore repellat, omnis quam? Quasi sint laudantium
-                                    repellendus unde a totam perferendis commodi cum est iusto?
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Post Author -->
-                        <div class="post-author">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="Thumb">
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Md Sohag</a></h4>
-                                <p>
-                                    Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit.
-                                    Vesti at bulum nec at odio aea the dumm ipsumm ipsum that dolocons rsus mal suada
-                                    and fadolorit to the consectetur elit. All the Lorem Ipsum generators on the
-                                    Internet tend. Entire its the did figure wonder off. sportsmen zealously arranging
-                                    to the main pint. Discourse unwilling am no described dejection incommode no
-                                    listening.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Post Author -->
-
-                        <!-- Post Tags Share -->
-                        <div class="post-tags share">
-                            <div class="tags">
-                                <h4>Tags: </h4>
-                                <a href="#">Algorithm</a>
-                                <a href="$">Data science</a>
-                            </div>
-
-                            <div class="social">
-                                <h4>Share:</h4>
-                                <ul>
-                                    <li>
-                                        <a class="facebook" href="#" target="_blank"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="pinterest" href="#" target="_blank"><i
-                                                class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="linkedin" href="#" target="_blank"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul><!-- End Social Share -->
-                            </div>
-                        </div>
-                        <!-- Post Tags Share -->
-
-                        <!-- Start Post Pagination -->
-                        <div class="post-pagi-area">
-                            <div class="post-previous">
-                                <a href="#">
-                                    <div class="icon"><i class="fas fa-angle-double-left"></i></div>
-                                    <div class="nav-title"> Previus Post <h5>Discovery incommode</h5>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="post-next">
-                                <a href="#">
-                                    <div class="nav-title">Next Post <h5>Discovery incommode</h5>
-                                    </div>
-                                    <div class="icon"><i class="fas fa-angle-double-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Post Pagination -->
-
-                        <!-- Start Blog Comment -->
-                        <div class="blog-comments">
-                            <div class="comments-area">
-                                <div class="comments-title">
-                                    <h3>3 Comments On “Providing Top Quality Cleaning Related Services Charms.”</h3>
-                                    <div class="comments-list">
-                                        <div class="comment-item">
-                                            <div class="avatar">
-                                                <img src="assets/img/800x800.png" alt="Author">
-                                            </div>
-                                            <div class="content">
-                                                <div class="title">
-                                                    <h5>Bubhan Prova <span class="reply"><a href="#"><i
-                                                                    class="fas fa-reply"></i> Reply</a></span></h5>
-                                                    <span>28 Feb, 2023</span>
-                                                </div>
-                                                <p>
-                                                    Delivered ye sportsmen zealously arranging frankness estimable as.
-                                                    Nay any article enabled musical shyness yet sixteen yet blushes.
-                                                    Entire its the did figure wonder off. sportsmen zealously arranging
-                                                    to the main pint. Discourse unwilling am no described dejection
-                                                    incommode no listening of. Before nature his parish boy.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-item reply">
-                                            <div class="avatar">
-                                                <img src="assets/img/800x800.png" alt="Author">
-                                            </div>
-                                            <div class="content">
-                                                <div class="title">
-                                                    <h5>Mickel Jones <span class="reply"><a href="#"><i
-                                                                    class="fas fa-reply"></i> Reply</a></span></h5>
-                                                    <span>15 Mar, 2023</span>
-                                                </div>
-                                                <p>
-                                                    Delivered ye sportsmen zealously arranging frankness estimable as.
-                                                    Nay any article enabled musical shyness yet sixteen yet blushes.
-                                                    Entire its the did figure wonder off. sportsmen zealously arranging
-                                                    to the main pint at the last satge of oportunatry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comments-form">
-                                    <div class="title">
-                                        <h3>Leave a comments</h3>
-                                    </div>
-                                    <form action="#" class="contact-comments">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <!-- Name -->
-                                                    <input name="name" class="form-control" placeholder="Name *"
-                                                        type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <!-- Email -->
-                                                    <input name="email" class="form-control" placeholder="Email *"
-                                                        type="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group comments">
-                                                    <!-- Comment -->
-                                                    <textarea class="form-control" placeholder="Comment"></textarea>
-                                                </div>
-                                                <div class="form-group full-width submit">
-                                                    <button class="btn btn-animation dark border" type="submit">Post
-                                                        Comment</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Comments Form -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Blog Single Modal -->
-
-    </div>
-    <!-- End Blog -->
+  
 
     <!-- Start Contact Area 
     ============================================= -->
@@ -1765,10 +1508,9 @@
                         <div class="form-box">
                             <h2>Let's talk?</h2>
                             <p>
-                                It's all about the humans behind a brand and those experiencing it, br we're right
-                                there. In the middle performance quick.
+                                Let's chat soon? I'd love to hear from you!
                             </p>
-                            <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                            <form action="https://formspree.io/f/mpzvvoeq" method="POST" class="contact-form">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group">
@@ -1828,8 +1570,8 @@
                                         <p>Email</p>
                                         <h5>
                                             <a href="mailto:joashkakembo10@gmail.com">joashkakembo10@gmail.com</a>
-                                            
-                                            
+
+
                                         </h5>
                                     </div>
                                 </li>
@@ -1840,7 +1582,7 @@
                                     <div class="info">
                                         <p>Address</p>
                                         <h5>
-                                            Uganda <br> Kampala<br> 
+                                            Uganda <br> Kampala<br>
                                         </h5>
                                     </div>
                                 </li>
@@ -1852,7 +1594,7 @@
                                         <p>Phone</p>
                                         <h5>
                                             <a href="tel:+256708197424">+256 708 197 424</a>
-                                           
+
                                         </h5>
                                     </div>
                                 </li>
@@ -1863,7 +1605,7 @@
                                     <div class="info">
                                         <p>Whatsapp</p>
                                         <h5>
-                                            <a href="https://wa.me/256708197424">+256 708 197 424</a>
+                                            <a href="https://wa.me/256708197424?text=Hi%2C%20Joash%20I'm%20in%20need%20of%20your%20Tech%20services">+256 708 197 424</a>
                                         </h5>
                                     </div>
                                 </li>
@@ -1890,11 +1632,11 @@
                             </a>
                         </li>
                         <li class="whatsapp">
-                            <a href="https://wa.me/256708197424">
+                            <a href=href="https://wa.me/256708197424?text=Hi%2C%20Joash%20I'm%20in%20need%20of%20your%20Tech%20services">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </li>
-                        
+
                         <li class="dribbble">
                             <a href="#">
                                 <i class="fab fa-dribbble"></i>
